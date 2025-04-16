@@ -1,0 +1,25 @@
+.service-description {
+    width: 790px; 
+    height: 170px;
+    padding: 30px 30px 30px 30px;
+    background-color:rgba(13, 13, 13, 1);
+    border-radius: 20px;
+}
+
+.service-description h1 {
+    color: #ffff;
+}
+
+.service-description h3 {
+    color: rgba(255, 255, 255, 0.61);
+    border-top: 1px rgb(82, 82, 82) solid;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+
+@media (max-width: 1700px) {
+    .service-description {
+        width: 100%; 
+    }
+}

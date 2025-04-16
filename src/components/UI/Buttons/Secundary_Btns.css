@@ -1,0 +1,9 @@
+.button2 {
+    background-color: black;
+    color: #ffffffa1;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    padding: 10px 12px 10px 12px;
+    font-family: var(--font-primary);
+
+}

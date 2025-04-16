@@ -1,0 +1,60 @@
+.word-carousel-container {
+    position: relative;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -150px;
+  }
+  
+  .word-carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .word-carousel {
+    display: flex;
+  }
+  
+  .word-carousel.animate {
+    animation: scrollLeft 15s linear infinite;
+  }
+  
+  .word-item {
+    padding: 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #c5c2c2;
+  }
+  
+  /* Gradient*/
+  .word-carousel-gradient-left,
+  .word-carousel-gradient-right {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .word-carousel-gradient-left {
+    left: 0;
+    background: linear-gradient(to right, #000000, transparent);
+  }
+  
+  .word-carousel-gradient-right {
+    right: 0;
+    background: linear-gradient(to left, #000000, transparent);
+  }
+  
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
