@@ -21,7 +21,7 @@ function Navbar() {
         <nav>
             <ul>
                 <div className="logo">
-                    <img src={logo} alt="logo" />
+                    <img onClick={() => scrollToSection("hero")} src={logo} alt="logo" />
                 </div>
                 <div className={`nav-links ${menuOpen ? "active" : ""}`}>
                     <li onClick={() => scrollToSection("services")}>Services</li>

@@ -24,9 +24,10 @@
   
   .word-item {
     padding: 0 20px;
-    font-size: 24px;
-    font-weight: bold;
     color: #c5c2c2;
+    font-family: var(--font-primary);
+    font-size: 15pt;
+    font-weight: 300;
   }
   
   /* Gradient*/

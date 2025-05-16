@@ -1,4 +1,4 @@
-import servicesImage from '../../assets/peb.jpg';
+import servicesImage from '../../assets/Peb.jpg';
 import './Services.css';
 import Secundary_Btns from '../UI/Buttons/Secundary_Bts';
 import ServiceCard from '../UI/Card/ServiceCard';

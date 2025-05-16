@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './Esteira.css';
 
-const WordCarousel = ({ words = ["React", "JavaScript", "Animação", "Carrossel", "Desenvolvimento", "Frontend"] }) => {
+const WordCarousel = ({ words = ["Architecture", "Landscape", "Graffiti", "Silhouettes", "Reflections", "Contrast"] }) => {
   const carouselRef = useRef(null);
 
   useEffect(() => {

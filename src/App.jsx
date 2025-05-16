@@ -1,7 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Main from './components/Hero/Hero'
-import Services from './components/Services_Section/services'
+import Services from './components/Services_Section/Services'
 import Projects from './components/Project_Section/Projects'
 import Footer from './components/Footer/Footer'
 import TestimonialCarousel from './components/Testimonials/TestimonialCarousel'
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
       </section>
 
-      <section>
+      <section id="hero">
         <Main />
       </section>
 
