@@ -1,0 +1,186 @@
+/* Container principal */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 3.5rem;
+}
+
+/* Layout da primeira seção */
+.footer-main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Seção da marca e redes sociais */
+.footer-brand-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 35%;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.footer-brand-name {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+
+/* Seção de links e newsletter */
+.footer-links-section {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    justify-content: flex-end;
+    gap: 4rem;
+    text-wrap: nowrap;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+}
+
+.footer-link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-column-title {
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: #a8afbb;
+    padding-bottom: 0.75rem;
+}
+
+.footer-link {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Newsletter */
+.footer-newsletter {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-newsletter p {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.footer-newsletter-form {
+    display: flex;
+    align-items: center;
+}
+
+.footer-newsletter-input {
+    width: 100%;
+    background-color: #f3f4f6;
+    color: #374151;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+}
+
+.footer-newsletter-input:focus {
+    outline: none;
+}
+
+.footer-newsletter-button {
+    background-color: #292929;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+/* Divisor */
+.footer-divider {
+    width: 100%;
+    border-top: 1px solid #6b7280;
+    margin: 2rem 0;
+}
+
+/* Copyright */
+.footer-copyright {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .footer-links-grid {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-brand-section {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .footer-links-section {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-links-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footer-newsletter {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-links-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

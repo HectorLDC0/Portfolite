@@ -9,6 +9,7 @@ import TestimonialCarousel from './components/Testimonials/TestimonialCarousel'
 function App() {
   return (
     <>
+
       <section>
         <Navbar />
       </section>
@@ -27,6 +28,10 @@ function App() {
 
       <section id="testimonials">
         <TestimonialCarousel />
+      </section>
+
+      <section>
+        <Footer />
       </section>
 
     </>

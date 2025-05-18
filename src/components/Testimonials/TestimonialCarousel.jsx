@@ -88,18 +88,20 @@ function TestimonialCarousel() {
         ))}
       </div>
 
-      <div className='statistics'>
-        <div>
-          <h1>180+</h1>
-          <h2>Projects completed</h2>
-        </div>
-        <div>
-          <h1>98%</h1>
-          <h2>Client satisfaction rate</h2>
-        </div>
-        <div>
-          <h1>5+</h1>
-          <h1>Years of experience</h1>
+      <div className="statistics-section">
+        <div className="statistics">
+          <div className="stat-item">
+            <h1>180+</h1>
+            <h2>Projects completed</h2>
+          </div>
+          <div className="stat-item">
+            <h1>98%</h1>
+            <h2>Client satisfaction rate</h2>
+          </div>
+          <div className="stat-item">
+            <h1>5+</h1>
+            <h2>Years of experience</h2>
+          </div>
         </div>
       </div>
     </div>
